@@ -1,20 +1,28 @@
-<style>
-	#wrapper {
-		padding-top: 50px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-	}
-</style>
-
 <script>
-	import Header from './components/header/Header.svelte';
-	import Main from './components/main/Main.svelte';
+	import { Router } from 'svelte-navigator';
+	import { MaterialApp, Container } from 'svelte-materialify';
+	import Header from './components/header';
+	import Routes from './routes';
+	import { setupI18n } from './i18n';
+
+	setupI18n({ withLocale: 'en' });
 </script>
 
-<section id="wrapper">
-	<Header />
-	<Main />
-</section>
+<Router>
+	<MaterialApp>
+		<section class="app-wrapper">
+			<Header />
+			<Container>
+				<Routes />
+			</Container>
+		</section>
+	</MaterialApp>
+</Router>
+
+<style lang="scss" global>
+	.app-wrapper {
+		background-color: rgba(128, 128, 128, 0.3);
+		width: 100%;
+		min-height: 100vh;
+	}
+</style>

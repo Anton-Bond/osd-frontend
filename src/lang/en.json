@@ -1,0 +1,13 @@
+{
+	"app_title": "OSD",
+	"main_menu": {
+		"tables": {
+			"title": "Categories",
+			"nav": "categories"
+		},
+		"users": {
+			"title": "Users",
+			"nav": "users"
+		}
+	}
+}

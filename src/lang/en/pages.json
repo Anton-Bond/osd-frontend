@@ -1,0 +1,21 @@
+{
+	"welcome": "Welcome",
+	"login": {
+		"title": "Enter login and password",
+		"login": "Login",
+		"password": "Password",
+		"signIn": "Sign in"
+	},
+	"categories": {
+		"title": "List of categories"
+	},
+	"users": {
+		"title": "Users list",
+		"table": {
+			"name": "User name",
+			"email": "Email",
+			"role": "Role",
+			"comment": "Comment"
+		}
+	}
+}
